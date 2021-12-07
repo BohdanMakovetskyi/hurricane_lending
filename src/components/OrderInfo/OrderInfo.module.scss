@@ -1,0 +1,23 @@
+.infoContainer {
+  display: flex;
+  align-items: center;
+  max-width: 320px;
+  margin-bottom: 15px;
+
+  .description {
+    margin-left: 10px;
+  }
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.header {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 300;
+}

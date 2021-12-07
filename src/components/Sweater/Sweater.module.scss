@@ -1,0 +1,135 @@
+.container {
+  min-width: 320px;
+  max-width: 320px;
+  min-height: 320px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  img {
+    height: 320px;
+    width: 320px;
+    object-fit: cover;
+  }
+}
+
+.btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  button {
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 150px;
+    padding: 5px 10px;
+    transition: all 0.3s;
+  }
+
+  .buy {
+    background: #000;
+    color: #fff;
+
+    &:hover {
+      color: #000;
+      background: #fff;
+    }
+  }
+}
+
+.modal {
+  position: fixed;
+  height: 450px;
+  width: 500px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 15px 8px rgba(0, 0, 0, 0.07);
+
+  @media only screen and (max-width: 600px) {
+    height: 300px;
+    width: 200px;
+  }
+
+  @media only screen and (max-width: 400px) {
+    height: 100vh;
+    width: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: unset;
+  }
+
+  .closeIcon {
+    top: 0;
+    right: 0;
+    position: absolute;
+    cursor: pointer;
+  }
+
+  img {
+    object-fit: cover;
+    height: 350px;
+    width: 400px;
+
+    @media only screen and (max-width: 600px) {
+      height: 250px;
+      width: 150px;
+    }
+
+    @media only screen and (max-width: 400px) {
+      height: 300px;
+      width: 250px;
+    }
+  }
+
+  p {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0;
+    margin-top: 10px;
+    text-align: center;
+  }
+}
+
+.modalContainer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgb(255, 255, 255, 0.8);
+  z-index: 100;
+}
+
+.price {
+  text-align: center;
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.sizes {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.item {
+  cursor: pointer;
+}
+
+.itemMark {
+  font-weight: bold;
+  color: red;
+}
